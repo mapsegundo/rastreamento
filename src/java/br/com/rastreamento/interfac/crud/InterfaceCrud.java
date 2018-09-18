@@ -39,9 +39,9 @@ public interface InterfaceCrud<T> extends Serializable {
     //Carrega a lista de determinada classe
     List<T> findList(Class<T> objs) throws Exception;
 
-    Object findById(Class<T> enteidade, Long id) throws Exception;
+    Object findById(Class<T> entidade, Long id) throws Exception;
 
-    T findByPorId(Class<T> enteidade, Long id) throws Exception;
+    T findByPorId(Class<T> entidade, Long id) throws Exception;
 
     List<T> findListByQueryDinamica(String s) throws Exception;
 
@@ -50,30 +50,30 @@ public interface InterfaceCrud<T> extends Serializable {
 
     //Executar update com SQL
     void executeUpdateSQLDinamica(String s) throws Exception;
-    
+
     //Limpa a sessao do Hibernate
     void clearSession() throws Exception;
-    
+
     //Retira o objeto da sessao do hibernate
-    void evict (Object objs) throws Exception;
-    
+    void evict(Object objs) throws Exception;
+
     Session getSession() throws Exception;
-    
+
     List<?> getListSQLDinamica(String sql) throws Exception;
-    
+
     //JDBC do spring
     JdbcTemplate getJdbcTemplate();
-    
+
     SimpleJdbcTemplate getSimpleJdbcTemplate();
-    
+
     SimpleJdbcInsert getSimpleJdbcInsert();
-    
+
     SimpleJdbcCall getSimpleJdbcClass();
-    
+
     Long totalRegistro(String table) throws Exception;
-    
+
     Query obterQuery(String query) throws Exception;
-    
+
     //Carregamento dinamico JSF e Primefaces
     List<T> findListByQueryDinamica(String query, int iniciaNoRegistro, int maximoResultado) throws Exception;
 }
