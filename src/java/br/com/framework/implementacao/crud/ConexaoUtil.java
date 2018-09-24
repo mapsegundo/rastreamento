@@ -1,4 +1,4 @@
-package br.com.rastreamento.implementacao.crud;
+package br.com.framework.implementacao.crud;
 
 /**
  * Nome do caminho do JNDI datasource Tomcat

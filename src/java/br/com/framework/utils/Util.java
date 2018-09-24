@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.com.rastreamento.utils;
+package br.com.framework.utils;
 
 import java.io.Serializable;
 import org.springframework.stereotype.Component;

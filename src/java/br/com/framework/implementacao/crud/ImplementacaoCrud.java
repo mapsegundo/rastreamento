@@ -3,10 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.com.rastreamento.implementacao.crud;
+package br.com.framework.implementacao.crud;
 
-import br.com.rastreamento.interfac.crud.InterfaceCrud;
-import br.com.rastreamento.hibernate.session.HibernateUtil;
+import br.com.framework.interfac.crud.InterfaceCrud;
+import br.com.framework.hibernate.session.HibernateUtil;
 import java.util.ArrayList;
 import java.util.List;
 import org.hibernate.Query;

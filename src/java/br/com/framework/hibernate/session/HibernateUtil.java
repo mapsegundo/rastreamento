@@ -1,6 +1,6 @@
-package br.com.rastreamento.hibernate.session;
+package br.com.framework.hibernate.session;
 
-import br.com.rastreamento.implementacao.crud.ConexaoUtil;
+import br.com.framework.implementacao.crud.ConexaoUtil;
 import java.io.Serializable;
 import java.sql.Connection;
 import java.sql.SQLException;
