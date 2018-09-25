@@ -1,28 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Context path="/rastreamento" reloadable="true">
-    <Resource 
-        name="jdbc/datasource"
-        auth="Container"
-        type="javax.sql.DataSource"
-        defaultAutoCommit="false"
-        maxActive="50"
-        maxIdle="10"
-        maxWait="10"
-        initialSize="10"
-        driverClassName="org.postgresql.Driver"
-        validationQuery="SELECT 'OK'"
-        testWhileIdle="true"
-        testOnBorrow="true"
-        numTestsPerEvictionRun="5"
-        timeBetweenEvictionRunsMillis="5000"
-        minEvictableIdleTimeMillis="60000"
-        antiJARLocking="false"
-        antiResourceLocking="false"
-        username="root"
-        password="debian23"
-        url="jdbc:postgresql://localhost:5432/processos?autoReconnect=true"
-    />
-    <!-- Classe do tomcat que esta lendo esse arquivo é org.apache.tomcat.dbcp.PoolingDataSource -->
-    <!-- POOL DE CONEXOES -->
-    <!-- https://tomcat.apache.org/tomcat-7.0-doc/jdbc-pool.html -->
+  <Resource antiJARLocking="false" antiResourceLocking="false" auth="Container" defaultAutoCommit="false" driverClassName="org.postgresql.Driver" initialSize="10" maxActive="50" maxIdle="10" maxWait="10" minEvictableIdleTimeMillis="60000" name="jdbc/datasouce" numTestsPerEvictionRun="5" password="debian23" testOnBorrow="true" testWhileIdle="true" timeBetweenEvictionRunsMillis="5000" type="javax.sql.DataSource" url="jdbc:postgresql://localhost:5432/processos?autoReconnect=true" username="root" validationQuery="SELECT &apos;OK&apos;"/>
+  <!-- Classe do tomcat que esta lendo esse arquivo é org.apache.tomcat.dbcp.PoolingDataSource -->
+  <!-- POOL DE CONEXOES -->
+  <!-- https://tomcat.apache.org/tomcat-7.0-doc/jdbc-pool.html -->
 </Context>
